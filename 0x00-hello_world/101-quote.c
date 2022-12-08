@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- *main - Prints to standard error
- (*
- *Description: Thi prints a statement to standard error)?
- *Return: One
+ *main - Entry point
+ *Description: changes the error message
+ *Return: when succesful gives 1
  */
 int main(void)
 {
-char txt[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+char new_standard_error[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-fwrite(txt, 59, 1, stderr);
+fwrite(new_standard_error, 59, 1, stderr);
 return (1); }
